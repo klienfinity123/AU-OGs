@@ -1,0 +1,168 @@
+<?php 
+
+session_start();
+
+if (!isset($_SESSION['username'])) {
+    header("Location: index.php");
+}
+
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+
+    <link rel="stylesheet" type="text/css" href="music.css">
+
+    
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous"/>
+    
+
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" type="text/css" href="songs.css">
+
+    
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        nav{
+            background: transparent;
+            width: 100%;
+            overflow: auto;
+        }
+        ul{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        li{
+            float: right;
+        }
+        nav a{
+            width: 130px;
+            display: block;
+            text-decoration: none;
+            text-align: center;
+            background: transparent;
+            font-size: 25px;
+            color: yellow;
+            padding: 5px 5px;
+        }
+        nav a:hover{
+            background: transparent;
+            color: skyblue;
+        }
+
+
+        img {
+        padding: 5px;
+        height: 600px;
+        width: 1345px;
+        }
+
+     
+    </style>
+</head>
+<link rel="stylesheet" type="text/css" href="styling.css">
+<body>
+    <nav>
+        <ul>
+            <li><a href="logout.php">Log Out</a></li>
+        </ul>
+    </nav>
+
+
+
+    <div class="banner"><img alt="" src="arellano.png" height="600" width="1345d"></div>
+
+
+    <div class="gallery">
+    <tablet>
+    <tr>  
+    <td><a href="card1.png" height ="350" width ="300"/> <img src="card1.png" height ="350" width ="300"/></a></image></td>
+    <td><a href="card2.png" height ="350" width ="300"/> <img src="card2.png" height ="350" width ="300"/></a></image></td>
+    <td><a href="card3.png" height ="350" width ="300"/> <img src="card3.png" height ="350" width ="300"/></a></image></td>
+    <td><a href="card4.png" height ="350" width ="300"/> <img src="card4.png" height ="350" width ="300"/></a></image></td>
+    </tr>
+    </table>
+    </div>
+
+
+    <!-- Services Section -->
+    <div class="services" id="services">
+      <div class="services__wrapper">
+        <div class="services__card">
+          <div class="services__btn"><button>Get Started</button></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Features Section -->
+    <div class="main" id="sign-up">
+      <div class="main__container">
+        <div class="main__content">
+        <button class="main__btn"><a href="404.php">Learn More</a></button>
+        </div>
+        <div class="main__img--container">
+          <div class="main__img--card" id="card-2">
+            <i class="fas fa-users"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero" id="home">
+      <div class="hero__container">
+        <button class="main__btn"><a href="logout.php">Log Out</a></button>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer__container">
+      <div class="footer__links">
+        <div class="footer__link--wrapper">
+          <div class="footer__link--items">
+            <h2>Social Media</h2>
+            <a href="facebook.png">Facebook |</a> <a href="instagram.png">Instagram |</a>
+            <a href="youtube.png">Youtube |</a> <a href="linkedin.png">LinkedIn |</a> <a href="twitter.png">Twitter</a>
+          </div>
+        </div>
+      </div>
+      <section class="social__media">
+        <div class="social__media--wrap">
+          <div class="footer__logo">
+            <a href="arellano.png" id="footer__logo">Arellano University - Jose Abad Santos Campus</a>
+          </div>
+          <p class="website__rights">© 12 - ICT 2, 2022. All rights reserved</p>
+          <div class="social__icons">
+            <a href="facebook.png" class="social__icon--link" target="_blank"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a href="instagram.png" class="social__icon--link"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="youtube.png" class="social__icon--link"
+              ><i class="fab fa-youtube"></i
+            ></a>
+            <a href="linkedin.png" class="social__icon--link"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a href="twitter.png" class="social__icon--link"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
